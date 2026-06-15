@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conciencia Histórica I: La Formación del Mundo Moderno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght=0,600;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Variables de color y fuentes */
+        :root {
+            --color-primario: #2c3e50;
+            --color-secundario: #8e44ad;
+            --color-fondo: #f4f6f7;
+            --color-tarjeta: #ffffff;
+            --color-texto: #2c3e50;
+            --color-texto-cuerpo: #2c3e50;
+            --fuente-titulo: 'Cinzel', serif;
+            --fuente-subtitulo: 'Playfair Display', serif;
+            --fuente-cuerpo: 'Montserrat', sans-serif;
+        }
+
+        /* Estilos Generales */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--fuente-cuerpo);
+            background-color: var(--color-fondo);
+            color: var(--color-texto-cuerpo);
+            line-height: 1.8;
+        }
+
+        /* Encabezado Principal */
+        header {
+            background: linear-gradient(135deg, #111d2b, #2c3e50);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--color-secundario);
+        }
+
+        header h1 {
+            font-family: var(--fuente-titulo);
+            font-size: 3.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            color: #f1c40f;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+
+        header p {
+            font-family: var(--fuente-subtitulo);
+            font-style: italic;
+            font-size: 1.5rem;
+            color: #ecf0f1;
+        }
+
+        /* Contenedor de Integrantes del Equipo */
+        .equipo-contenedor {
+            background-color: #fcf3cf;
+            border-left: 5px solid #f39c12;
+            padding: 25px;
+            margin: 30px auto;
+            max-width: 1000px;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .equipo-contenedor h3 {
+            font-family: var(--fuente-cuerpo);
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #b7950b;
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .equipo-contenedor ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .equipo-contenedor ul li {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.05rem;
+        }
+
+        .equipo-contenedor ul li::before {
+            content: "👤 ";
+        }
+
+        /* Contenido Principal */
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Secciones de Contenido */
+        section {
+            background-color: var(--color-tarjeta);
+            padding: 45px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            font-family: var(--fuente-subtitulo);
+            color: var(--color-primario);
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #f4f6f7;
+            padding-bottom: 12px;
+        }
+
+        h3.subseccion {
+            font-family: var(--fuente-cuerpo);
+            color: var(--color-secundario);
+            font-size: 1.3rem;
+            margin: 30px 0 15px 0;
+            font-weight: 600;
+            border-left: 4px solid var(--color-secundario);
+            padding-left: 10px;
+        }
+
+        p {
+            margin-bottom: 22px;
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        /* Resaltados */
+        strong {
+            color: #111d2b;
+            font-weight: 600;
+        }
+
+        /* Estilos para recursos multimedia (Espacios placeholders vacíos) */
+        .multimedia-box {
+            background-color: #f8f9f9;
+            border: 2px dashed #bdc3c7;
+            border-radius: 6px;
+            padding: 30px;
+            text-align: center;
+            margin: 35px 0;
+            color: #7f8c8d;
+            transition: all 0.3s ease;
+        }
+
+        .multimedia-box:hover {
+            border-color: var(--color-secundario);
+            background-color: #f4ecf7;
+        }
+
+        .multimedia-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            display: block;
+            margin: 0 auto 15px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .audio-container audio {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 15px;
+        }
+
+        .video-container video {
+            width: 100%;
+            max-width: 850px;
+            border-radius: 4px;
+            margin-top: 15px;
+            background-color: #111d2b;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #111d2b;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 70px;
+            font-size: 0.95rem;
+            border-top: 4px solid var(--color-secundario);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Conciencia Histórica I</h1>
+        <p>Progresión 4: La Formación del Mundo Moderno y la Integración Global</p>
+    </header>
+
+    <div class="equipo-contenedor">
+        <h3>Integrantes del Equipo Evaluado:</h3>
+        <ul>
+            <li>Alan Gerardo Saucedo Vazquez</li>
+            <li>Eduardo Abraham Ventura Rincón</li>
+        </ul>
+    </div>
+
+    <main>
+
+        <section>
+            <h2>Contexto Global: La Transición a la Modernidad y la Crisis Comercial del Siglo XV</h2>
+            <p>Para construir una auténtica <strong>Conciencia Histórica</strong> sobre el choque cultural y geográfico de 1492, es obligatorio retroceder a los acontecimientos económicos europeos de mediados del siglo XV. Durante siglos, la Europa medieval dependió estrechamente de la denominada <em>Ruta de la Seda</em> y de las redes de navegación del Mar Mediterráneo oriental. Estas vías conectaban de forma indirecta a los comerciantes de las repúblicas italianas con los mercados de China, la India y las Islas Molucas, proveedores esenciales de seda, porcelana, pólvora y, fundamentalmente, especias (clavo, pimienta, canela y nuez moscada), indispensables para la conservación de alimentos y la medicina de la época.</p>
+            <p>Sin embargo, este engranaje comercial colapsó abruptamente en <strong>1453</strong>, cuando el Imperio Otomano, bajo el mando del sultán Mehmed II, asedió y conquistó la ciudad de <strong>Constantinopla</strong>, decretando la disolución definitiva del Imperio Romano de Oriente (Bizancio). Los otomanos impusieron severas restricciones arancelarias, bloqueos militares y monopolios estrictos sobre los pasos terrestres euroasiáticos. Europa quedó aislada. Las economías occidentales entraron en una crisis de desabastecimiento, lo que obligó a las monarquías emergentes a buscar vías marítimas alternativas que no dependieran del controlado Mediterráneo oriental.</p>
+            <p>En este escenario de necesidad geopolítica, las naciones de la Península Ibérica tomaron la delantera gracias a su privilegiada posición geográfica hacia el Atlántico y a una profunda tradición marinera. El Reino de Portugal consolidó tempranamente una estrategia audaz: circunnavegar la masa continental de África con el fin de abrirse paso hacia el Océano Índico. Paralelamente, el Reino de Castilla y el Reino de Aragón se vieron en la necesidad de idear un plan alternativo que pudiera competir con los avances lusitanos, sentando las bases para el financiamiento de proyectos marítimos de alto riesgo.</p>
+            
+            <div class="multimedia-box audio-container">
+                <p><strong>🎵 Audio Narrativo (Narración del Contexto Histórico)</strong></p>
+                <audio controls>
+                    <source src="audio67.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+        </section>
+
+        <section>
+            <h2>1.5 El Proyecto Colombino y el Descubrimiento de América</h2>
+            <p>El navegante de origen genovés, <strong>Cristóbal Colón</strong>, desarrolló la hipótesis de que la Tierra poseía una circunferencia sustancialmente menor a la estimada por los científicos de la época, deduciendo erróneamente que los litorales de Asia (Cipango y Catay) se localizaban a una distancia navegable relativamente corta viajando en línea recta hacia el oeste, cruzando el temido Océano Atlántico. Tras ver rechazado su proyecto por la corte de Portugal, Colón acudió ante los <strong>Reyes Católicos</strong> (Isabel I de Castilla y Fernando II de Aragón). Tras años de deliberaciones, la rendición del Reino nazarí de Granada en 1492 liberó recursos financieros para la corona, facilitando la firma de las <em>Capitulaciones de Santa Fe</em>, un contrato jurídico que le otorgaba a Colón los títulos de Almirante, Virrey y Gobernador de las tierras que lograse descubrir.</p>
+            <p>La expedición se concentró y organizó en las costas andaluzas, zarpando formalmente el <strong>3 de agosto de 1492</strong> desde el <strong>Puerto de Palos de Moguer</strong> (Andalucía, España). El contingente estaba integrado por unos 120 hombres, divididos en tres navíos que reflejaban la vanguardia de la ingeniería naval ibérica de la época: las carabelas llamadas <strong>la Niña</strong> (bajo el mando de Vicente Yáñez Pinzón) y <strong>la Pinta</strong> (capaneada por Martín Alonso Pinzón), ambas embarcaciones ligeras y veloces ideales para la exploración; y la nao capitana, <strong>la Santa María</strong> (propiedad del cartógrafo Juan de la Cosa), una embarcación de mayor tonelaje y calado pero más lenta.</p>
+            <p>La travesía se prolongó mucho más allá de las estimaciones originales de Colón, lo que desató episodios críticos de insubordinación, desabastecimiento de agua dulce y amotinamientos debido al pánico de la tripulación de perderse en el vacío oceánico. No obstante, la disciplina se mantuvo y, a las dos de la madrugada del <strong>viernes 12 de octubre de 1492</strong>, el marinero Rodrigo de Triana, apostado en la vigía de la Pinta, divisó el horizonte terrestre. Al amanecer, la expedición desembarcó en una playa coralina del archipiélago de las Bahamas. Los habitantes originarios (taínos) denominaban a la isla <em>Guanahani</em>, pero Colón tomó posesión militar y religiosa de ella en nombre de la Corona de Castilla, rebautizándola como San Salvador. Colón exploró posteriormente Cuba y La Española, manteniéndose firme hasta el día de su muerte en la idea errónea de que había tocado el extremo oriental del continente asiático.</p>
+            
+            <div class="multimedia-box">
+                <img src="https://www.cope.es/files/microformat_image/uploads/2025/07/10/686f1d7108015.jpeg" alt="Desembarco de Colón en Guanahaní">
+                <p style="font-size: 0.85rem; font-style: italic;">Figura 1: Representación pictórica del contacto inicial europeo en los litorales insulares del Caribe en octubre de 1492.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>a) El Nombre de América: De la Confusión Geográfica a la Cartografía Alemana</h2>
+            <p>La sustitución del término "Las Indias" por el de "América" responde a un complejo proceso de interpretación geográfica capitaneado intelectualmente por el explorador, comerciante y cosmógrafo florentino <strong>Américo Vespucio</strong>. Entre los años 1499 y 1502, Vespucio participó en diversas expediciones de reconocimiento patrocinadas tanto por España como por Portugal, recorriendo extensamente las costas orientales de Sudamérica y el litoral de Brasil. Dotado de conocimientos astronómicos avanzados, Vespucio observó que las magnitudes de los sistemas fluviales, las extensiones de las costas y la diversidad étnica y biológica no correspondían con las detalladas descripciones que Marco Polo y otros viajeros habían dejado sobre la India o China.</p>
+            <p>Vespucio plasmó sus conclusiones en cartas impresas dirigidas a sus mecenas en Europa, entre las que sobresale su tratado epistolar titulado <strong>Mundus Novus</strong> (Nuevo Mundo), publicado hacia 1503 o 1504. Este documento se convirtió en un éxito editorial masivo en los círculos académicos de Europa Central, revolucionando los dogmas de la geografía bíblica e institucional de la época al demostrar de forma matemática que las tierras occidentales constituían una masa continental colosal e independiente de Asia.</p>
+            <p>En el año <strong>1507</strong>, un influyente centro de estudios humanistas y cartográficos denominado la <em>Academia de Saint-Dié</em>, ubicada en Lorena (Francia), asumió la tarea de redactar una enciclopedia geográfica actualizada y trazar un mapamundi que incorporara los últimos descubrimientos del Atlántico. El director técnico y cosmógrafo alemán de la obra, <strong>Martín Waldseemüller</strong>, junto al erudito Matthias Ringmann, se encargaron de diseñar el mapa monumental. Al dibujar el contorno del nuevo continente del sur, Waldseemüller tomó la decisión de rotular la región con el nombre de <strong>América</strong>, rindiendo homenaje explícito a la agudeza intelectual de Américo Vespucio, considerándolo el verdadero descriptor científico del continente. Se utilizó la variante femenina del nombre para mantener la armonía de la nomenclatura de los continentes ya conocidos (Europa, Asia y África).</p>
+            
+            <div class="multimedia-box">
+                <img src="https://i0.wp.com/diariovea.com.ve/wp-content/uploads/2026/03/Americo-Vespucio.jpg?fit=1062%2C597&ssl=1" alt="Américo Vespucio y Mapa de Waldseemüller">
+                <p style="font-size: 0.85rem; font-style: italic;">Figura 2: Retrato antiguo de Américo Vespucio al lado de las primeras impresiones cartográficas del Nuevo Mundo.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>b) El Conflicto Geopolítico Ibérico: Las Bulas Alejandrinas y el Impacto del Tratado de Tordesillas</h2>
+            <p>La noticia del exitoso retorno de Cristóbal Colón a Europa provocó una inmediata crisis diplomática en la Península Ibérica. El monarca Juan II de Portugal sostuvo que, de acuerdo con el Tratado de Alcáçovas firmado en 1479, todas las tierras descubiertas en la dirección del Atlántico sur correspondían legítimamente a la jurisdicción lusitana. Ante la inminencia de una guerra armada entre las dos potencias navales, los Reyes Católicos reaccionaron con rapidez acudiendo a los mecanismos de arbitraje internacional medievales, personificados en la institución del Papado.</p>
+            
+            <h3 class="subseccion">Las Bulas Alejandrinas de 1493</h3>
+            <p>La Santa Sede se encontraba bajo la dirección del <strong>Papa Alejandro VI</strong> (Rodrigo Borgia), un pontífice de origen valenciano con estrechos vínculos políticos e intereses dinásticos compartidos con la Corona de Aragón y Castilla. Entre los meses de mayo y septiembre de 1493, el Papa emitió una serie de decretos pontificios conocidos colectivamente por la historiografía como las <strong>Bulas Alejandrinas</strong>, siendo las más determinantes las dos llamadas <em>Inter Caetera</em> y la bula de extensión <em>Dudum Siquidem</em>.</p>
+            <p>A través de estos documentos oficiales de la Iglesia Católica, el Papa funcionó como árbitro supremo universal y trazó una línea meridiana imaginaria divisoria de polo a polo, fijada exactamente a <strong>100 leguas al oeste de las islas Azores y de Cabo Verde</strong>. El decreto papal dictaminaba que todas las islas y territorios continentales descubiertos o por descubrir que se localizaran al oeste de dicha línea pertenecerían en exclusividad perpetua a los reyes de España, bajo la estricta condición legal y moral de asumir la responsabilidad total de financiar la evangelización de los pueblos nativos mediante órdenes misioneras, marginando por completo a Portugal de las rutas comerciales del Atlántico centro-norte.</p>
+            
+            <h3 class="subseccion">El Tratado de Tordesillas de 1494</h3>
+            <p>Sabiéndose perjudicado y excluido por la parcialidad del Papa Alejandro VI, el rey Juan II de Portugal se negó a aceptar los términos de las bulas y amenazó con movilizar sus flotas militares de guerra. Evitando un desgaste bélico, los Reyes Católicos aceptaron entablar negociaciones diplomáticas directas bilaterales fuera de la intervención papal. Los diplomáticos de ambos reinos se reunieron en la localidad castellana de Tordesillas, donde tras intensos debates y revisiones de mapas náuticos, firmaron el histórico <strong>Tratado de Tordesillas el 7 de junio de 1494</strong>.</p>
+            <p>El punto central y de mayor trascendencia del acuerdo consistió en modificar la ubicación de la línea divisoria impuesta por el Papa, recorriéndola sustancialmente hacia el oeste, quedando establecida a <strong>370 leguas al oeste de las islas de Cabo Verde</strong>. Ninguno de los monarcas del siglo XV imaginaba el monumental impacto geográfico de este cambio de coordenadas: la nueva línea divisoria logró cortar el extremo más oriental del continente sudamericano.</p>
+            <p>Gracias a esta modificación del Tratado de Tordesillas, cuando la armada portuguesa dirigida por Pedro Álvares Cabral desvió su ruta en el año 1500 y desembarcó en las costas orientales de Sudamérica, el Reino de Portugal pudo reclamar legítimamente la soberanía e iniciar la colonización del territorio que con el tiempo se convertiría en Brasil. Esto fragmentó definitivamente el mapa lingüístico, económico y político del continente americano, dejando una huella colonial que perdura hasta el presente.</p>
+
+            <div class="multimedia-box video-container">
+    <p><strong>🎬 Video Documental Didáctico</strong></p>
+    <p style="font-size: 0.85rem; color:#95a5a6; margin-bottom: 15px;">Video incrustado desde YouTube para complementar la Progresión 4.</p>
+    
+    <iframe width="100%" height="450" src="https://www.youtube-nocookie.com/embed/FdizSgFEuR8?si=N6FsuO-x3Q-txe10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+style="border-radius: 4px;"></iframe>
+</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Unidad de Aprendizaje Curricular: Conciencia Histórica I. Material Didáctico de Evaluación Escolar.</p>
+    </footer>
+
+</body>
+</html>
